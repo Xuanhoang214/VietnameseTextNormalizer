@@ -48,13 +48,12 @@
 /************************************************************************/
 
 
-#if defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64) 
+//#if defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64) 
+//#define qwchar wchar_t
+//#else
+//#define qwchar unsigned short int
+//#endif
 #define qwchar wchar_t
-#else
-
-#define qwchar unsigned short int
-#endif
-
 
 //#define QUANGBT_SPEECH_SYNTHESIS_TRACE_MEMORY_ALLOCATION
 

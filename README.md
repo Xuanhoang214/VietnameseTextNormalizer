@@ -23,6 +23,17 @@ cp -f MakefilePython3 Makefile
 make -j
 ```
 
+- Simple installation for python3
+```
+[sudo] python3 setup.py install
+```
+
+```python
+from PyVietnameseTextNormalizer import Normalizer
+N = Normalizer()
+N.normalize("Tôi làm việ ở ban công ngệ FPT, tôi là người viêt nam. hôm nay tôi ko thích ăn mì tôm. tôi làm đc 2 bài tập.")
+```
+
 - Hướng dẫn sử dụng
 	+ Đặt file VietnameseTextNormalizer.so cùng thư mục chạy với file UnitTestVietnameseTextNormalizer.py
 	+ Chạy file UnitTestVietnameseTextNormalizer.py
