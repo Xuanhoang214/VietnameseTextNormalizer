@@ -8,7 +8,6 @@ ext_modules = [
         [
             "PyVietnameseTextNormalizer.pyx",
             "ContextSystem.cpp",
-            "PhonemeSystem.cpp",
             "SyllableSystem.cpp",
             "VietnameseTextNormalizer.cpp",
             "WordSystem.cpp",
