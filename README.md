@@ -35,8 +35,9 @@ make -j
 
 ```
 - Install google colab
+```
 !pip install git+https://github.com/Xuanhoang214/VietnameseTextNormalizer.git
-
+```
 - Simple installation for python3
 ```
 [sudo] python3 setup.py install
