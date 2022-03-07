@@ -4,7 +4,7 @@ from libc.stddef cimport wchar_t
 ctypedef wchar_t qwchar
 
 cdef extern from "<Python.h>":
-    cdef wchar_t* PyUnicode_AsWideCharString(object unicode, Py_ssize_t *size)
+    cdef wchar_t* PyUnicode_AsWideCharString(object unicode, Py_ssize_t *size) except NULL
     cdef object PyUnicode_FromWideChar(const wchar_t *w, Py_ssize_t size)
 
 cdef extern from "VietnameseTextNormalizer.h":
